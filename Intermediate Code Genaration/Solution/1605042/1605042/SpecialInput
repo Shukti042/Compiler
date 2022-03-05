@@ -1,0 +1,25 @@
+int f(int a,int b){
+int c;
+if(a==0)
+{
+    c=b*a;
+    println(c); 
+    return c;
+}
+c=b*a;
+a--;
+b--;
+f(a,b);
+println(c);
+return -5;    
+}
+
+
+int main(){
+    int a,b;
+    a=3;
+    b=4;
+    a=f(a,b);
+    println(a);
+    return 0;
+}

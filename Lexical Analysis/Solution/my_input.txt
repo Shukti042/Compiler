@@ -1,0 +1,76 @@
+int main(){
+    "abc"
+	int a,b, _;
+	float c;
+	int a=10;
+	double d;
+	c=12.;
+	c=.;
+	c=E10;
+	c=3.14159;
+	c=3.14156E-10;
+	d=.314159;
+	d=314159E10;
+	a=a+1;
+	b++;
+	int a=-7;
+	//ab\ncd\tyu
+	if(a>1) {for(int i=0; i<2; i++){}}
+	else{}
+	char ch='a';
+	char ch='1';
+	ch='\t';
+	char c[]="ab\td";
+	char t[]="abc\\";
+	char s[]="hello\nworld";
+	char v[]="abc\\def";
+	char n[]="ab/cd";
+	char new[]="ab\cd";
+	printf("abc\
+def\
+ghi");
+// a comment
+    char c[]="Ghf\
+Fgh\
+Ghj
+//again a comment
+// A multiple line comment\
+that comment
+//hello\
+world 
+//ab\ncd\tyo
+/** another
+*** comment ***/
+    printf("I/am/a");
+    printf("I
+    am
+    a")
+    printf("%s", c);
+    3.-14;
+    double q=12.E4;
+    double e=1.2.345;
+    double f=1.2.3.4.;
+    double n=1.2.;
+    double m=.2.;
+    float f=1E10.7;
+    char g='ab2cd';
+    char d='\n\n';
+    char s[]="ab\";
+    chae s[]="
+    char h='a;
+    char j='\';
+    char k='';
+    printf("ab\td
+    printf("abc\
+def\
+ghi
+    printf("unfinished\
+    string
+ /**abc
+def*/
+	return 0;
+}
+//test comment
+//abc\
+def\
+ghi\

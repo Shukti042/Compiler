@@ -1,0 +1,24 @@
+iffor
+case
+-23
+'a' 'uh' '\\' '\"' '\0'
+%*;
+12abc
+_abc
+"Sheha\nb"
+"Shehab\
+Sarar\
+Ahmed"
+//haha
+/*sdfhnsjgbds
+guisdfgnbsrs*/
+3.4.5343453.342323.324524
+2e.2323e.3434
+1.2
+1.2e-3
+-.2E+03
+'\
+"zaara
+`
+/*
+sdfsd

@@ -1,0 +1,3 @@
+lex -o scanner.cpp scanner.l
+g++ scanner.cpp -lfl
+./a.out input.txt

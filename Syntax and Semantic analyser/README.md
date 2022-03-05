@@ -1,0 +1,3 @@
+# 4-bit ALU Simulation
+
+Full description about the tasks are in [Problem Description](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/ALU_Simulation.pdf) and the solutions are in [Solution](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/Solution/Final-Circuit.circ). Details report on the tasks is in [Report](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/Solution/Report.docx). 

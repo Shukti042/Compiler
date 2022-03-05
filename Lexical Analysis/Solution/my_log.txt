@@ -1,0 +1,594 @@
+Line No. 1: Token <ID> Lexeme main found
+
+1 --> <main, ID> 
+
+Line No. 1: Token <LPAREN> Lexeme ( found
+Line No. 1: Token <RPAREN> Lexeme ) found
+Line No. 1: Token <LCURL> Lexeme { found
+Line No. 2: Token <STRING> Lexeme "abc" found
+Line No. 3: Token <ID> Lexeme a found
+
+1 --> <main, ID> 
+6 --> <a, ID> 
+
+Line No. 3: Token <COMMA> Lexeme , found
+Line No. 3: Token <ID> Lexeme b found
+
+0 --> <b, ID> 
+1 --> <main, ID> 
+6 --> <a, ID> 
+
+Line No. 3: Token <COMMA> Lexeme , found
+Line No. 3: Token <ID> Lexeme _ found
+
+0 --> <b, ID> 
+1 --> <main, ID> 
+4 --> <_, ID> 
+6 --> <a, ID> 
+
+Line No. 3: Token <SEMICOLON> Lexeme ; found
+Line No. 4: Token <ID> Lexeme c found
+
+0 --> <b, ID> 
+1 --> <main, ID> <c, ID> 
+4 --> <_, ID> 
+6 --> <a, ID> 
+
+Line No. 4: Token <SEMICOLON> Lexeme ; found
+Line No. 5: Token <ID> Lexeme a found
+Line No. 5: Token <ASSIGNOP> Lexeme = found
+Line No. 5: Token <CONST_INT> Lexeme 10 found
+
+0 --> <b, ID> 
+1 --> <main, ID> <c, ID> 
+4 --> <_, ID> 
+6 --> <a, ID> <10, CONST_INT> 
+
+Line No. 5: Token <SEMICOLON> Lexeme ; found
+Line No. 6: Token <ID> Lexeme d found
+
+0 --> <b, ID> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+6 --> <a, ID> <10, CONST_INT> 
+
+Line No. 6: Token <SEMICOLON> Lexeme ; found
+Line No. 7: Token <ID> Lexeme c found
+Line No. 7: Token <ASSIGNOP> Lexeme = found
+Line No. 7: Token <CONST_FLOAT> Lexeme 12. found
+
+0 --> <b, ID> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> 
+6 --> <a, ID> <10, CONST_INT> 
+
+Line No. 7: Token <SEMICOLON> Lexeme ; found
+Line No. 8: Token <ID> Lexeme c found
+Line No. 8: Token <ASSIGNOP> Lexeme = found
+Error at line 8: Unrecognized lexeme .
+Line No. 8: Token <SEMICOLON> Lexeme ; found
+Line No. 9: Token <ID> Lexeme c found
+Line No. 9: Token <ASSIGNOP> Lexeme = found
+Line No. 9: Token <ID> Lexeme E10 found
+
+0 --> <b, ID> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> 
+
+Line No. 9: Token <SEMICOLON> Lexeme ; found
+Line No. 10: Token <ID> Lexeme c found
+Line No. 10: Token <ASSIGNOP> Lexeme = found
+Line No. 10: Token <CONST_FLOAT> Lexeme 3.14159 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> 
+
+Line No. 10: Token <SEMICOLON> Lexeme ; found
+Line No. 11: Token <ID> Lexeme c found
+Line No. 11: Token <ASSIGNOP> Lexeme = found
+Line No. 11: Token <CONST_FLOAT> Lexeme 3.14156E-10 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> 
+
+Line No. 11: Token <SEMICOLON> Lexeme ; found
+Line No. 12: Token <ID> Lexeme d found
+Line No. 12: Token <ASSIGNOP> Lexeme = found
+Line No. 12: Token <CONST_FLOAT> Lexeme .314159 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> 
+
+Line No. 12: Token <SEMICOLON> Lexeme ; found
+Line No. 13: Token <ID> Lexeme d found
+Line No. 13: Token <ASSIGNOP> Lexeme = found
+Line No. 13: Token <CONST_FLOAT> Lexeme 314159E10 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> 
+
+Line No. 13: Token <SEMICOLON> Lexeme ; found
+Line No. 14: Token <ID> Lexeme a found
+Line No. 14: Token <ASSIGNOP> Lexeme = found
+Line No. 14: Token <ID> Lexeme a found
+Line No. 14: Token <ADDOP> Lexeme + found
+Line No. 14: Token <CONST_INT> Lexeme 1 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> 
+
+Line No. 14: Token <SEMICOLON> Lexeme ; found
+Line No. 15: Token <ID> Lexeme b found
+Line No. 15: Token <INCOP> Lexeme ++ found
+Line No. 15: Token <SEMICOLON> Lexeme ; found
+Line No. 16: Token <ID> Lexeme a found
+Line No. 16: Token <ASSIGNOP> Lexeme = found
+Line No. 16: Token <ADDOP> Lexeme - found
+Line No. 16: Token <CONST_INT> Lexeme 7 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> 
+
+Line No. 16: Token <SEMICOLON> Lexeme ; found
+Line No. 17: Token <COMMENT> Lexeme //ab\ncd\tyu found
+Line No. 18: Token <LPAREN> Lexeme ( found
+Line No. 18: Token <ID> Lexeme a found
+Line No. 18: Token <RELOP> Lexeme > found
+Line No. 18: Token <CONST_INT> Lexeme 1 found
+Line No. 18: Token <RPAREN> Lexeme ) found
+Line No. 18: Token <LCURL> Lexeme { found
+Line No. 18: Token <LPAREN> Lexeme ( found
+Line No. 18: Token <ID> Lexeme i found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> 
+
+Line No. 18: Token <ASSIGNOP> Lexeme = found
+Line No. 18: Token <CONST_INT> Lexeme 0 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> 
+
+Line No. 18: Token <SEMICOLON> Lexeme ; found
+Line No. 18: Token <ID> Lexeme i found
+Line No. 18: Token <RELOP> Lexeme < found
+Line No. 18: Token <CONST_INT> Lexeme 2 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> 
+
+Line No. 18: Token <SEMICOLON> Lexeme ; found
+Line No. 18: Token <ID> Lexeme i found
+Line No. 18: Token <INCOP> Lexeme ++ found
+Line No. 18: Token <RPAREN> Lexeme ) found
+Line No. 18: Token <LCURL> Lexeme { found
+Line No. 18: Token <RCURL> Lexeme } found
+Line No. 18: Token <RCURL> Lexeme } found
+Line No. 19: Token <LCURL> Lexeme { found
+Line No. 19: Token <RCURL> Lexeme } found
+Line No. 20: Token <ID> Lexeme ch found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> 
+
+Line No. 20: Token <ASSIGNOP> Lexeme = found
+Line No. 20: Token <CONST_CHAR> Lexeme 'a' found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> 
+
+Line No. 20: Token <SEMICOLON> Lexeme ; found
+Line No. 21: Token <ID> Lexeme ch found
+Line No. 21: Token <ASSIGNOP> Lexeme = found
+Line No. 21: Token <CONST_CHAR> Lexeme '1' found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> 
+
+Line No. 21: Token <SEMICOLON> Lexeme ; found
+Line No. 22: Token <ID> Lexeme ch found
+Line No. 22: Token <ASSIGNOP> Lexeme = found
+Line No. 22: Token <CONST_CHAR> Lexeme '\t' found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+4 --> <_, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> 
+
+Line No. 22: Token <SEMICOLON> Lexeme ; found
+Line No. 23: Token <ID> Lexeme c found
+Line No. 23: Token <LTHIRD> Lexeme [ found
+Line No. 23: Token <RTHIRD> Lexeme ] found
+Line No. 23: Token <ASSIGNOP> Lexeme = found
+Line No. 23: Token <STRING> Lexeme "ab\td" found
+Line No. 23: Token <SEMICOLON> Lexeme ; found
+Line No. 24: Token <ID> Lexeme t found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> 
+
+Line No. 24: Token <LTHIRD> Lexeme [ found
+Line No. 24: Token <RTHIRD> Lexeme ] found
+Line No. 24: Token <ASSIGNOP> Lexeme = found
+Line No. 24: Token <STRING> Lexeme "abc\\" found
+Line No. 24: Token <SEMICOLON> Lexeme ; found
+Line No. 25: Token <ID> Lexeme s found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+3 --> <s, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> 
+
+Line No. 25: Token <LTHIRD> Lexeme [ found
+Line No. 25: Token <RTHIRD> Lexeme ] found
+Line No. 25: Token <ASSIGNOP> Lexeme = found
+Line No. 25: Token <STRING> Lexeme "hello\nworld" found
+Line No. 25: Token <SEMICOLON> Lexeme ; found
+Line No. 26: Token <ID> Lexeme v found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+3 --> <s, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> 
+
+Line No. 26: Token <LTHIRD> Lexeme [ found
+Line No. 26: Token <RTHIRD> Lexeme ] found
+Line No. 26: Token <ASSIGNOP> Lexeme = found
+Line No. 26: Token <STRING> Lexeme "abc\\def" found
+Line No. 26: Token <SEMICOLON> Lexeme ; found
+Line No. 27: Token <ID> Lexeme n found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> 
+2 --> <d, ID> 
+3 --> <s, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> 
+
+Line No. 27: Token <LTHIRD> Lexeme [ found
+Line No. 27: Token <RTHIRD> Lexeme ] found
+Line No. 27: Token <ASSIGNOP> Lexeme = found
+Line No. 27: Token <STRING> Lexeme "ab/cd" found
+Line No. 27: Token <SEMICOLON> Lexeme ; found
+Line No. 28: Token <ID> Lexeme new found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> 
+
+Line No. 28: Token <LTHIRD> Lexeme [ found
+Line No. 28: Token <RTHIRD> Lexeme ] found
+Line No. 28: Token <ASSIGNOP> Lexeme = found
+Line No. 28: Token <STRING> Lexeme "ab\cd" found
+Line No. 28: Token <SEMICOLON> Lexeme ; found
+Line No. 29: Token <ID> Lexeme printf found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> 
+
+Line No. 29: Token <LPAREN> Lexeme ( found
+Line No. 29: Token <STRING> Lexeme "abc\
+def\
+ghi" found
+Line No. 31: Token <RPAREN> Lexeme ) found
+Line No. 31: Token <SEMICOLON> Lexeme ; found
+Line No. 32: Token <COMMENT> Lexeme // a comment found
+Line No. 33: Token <ID> Lexeme c found
+Line No. 33: Token <LTHIRD> Lexeme [ found
+Line No. 33: Token <RTHIRD> Lexeme ] found
+Line No. 33: Token <ASSIGNOP> Lexeme = found
+Error at line 33: Unterminated String "Ghf\
+Fgh\
+Ghj
+Line No. 36: Token <COMMENT> Lexeme //again a comment found
+Line No. 37: Token <COMMENT> Lexeme // A multiple line comment\
+that comment found
+Line No. 39: Token <COMMENT> Lexeme //hello\
+world  found
+Line No. 41: Token <COMMENT> Lexeme //ab\ncd\tyo found
+Line No. 42: Token <COMMENT> Lexeme /** another
+*** comment ***/ found
+Line No. 44: Token <ID> Lexeme printf found
+Line No. 44: Token <LPAREN> Lexeme ( found
+Line No. 44: Token <STRING> Lexeme "I/am/a" found
+Line No. 44: Token <RPAREN> Lexeme ) found
+Line No. 44: Token <SEMICOLON> Lexeme ; found
+Line No. 45: Token <ID> Lexeme printf found
+Line No. 45: Token <LPAREN> Lexeme ( found
+Error at line 45: Unterminated String "I
+Line No. 46: Token <ID> Lexeme am found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> 
+
+Line No. 47: Token <ID> Lexeme a found
+Error at line 47: Unterminated String ")
+Line No. 48: Token <ID> Lexeme printf found
+Line No. 48: Token <LPAREN> Lexeme ( found
+Line No. 48: Token <STRING> Lexeme "%s" found
+Line No. 48: Token <COMMA> Lexeme , found
+Line No. 48: Token <ID> Lexeme c found
+Line No. 48: Token <RPAREN> Lexeme ) found
+Line No. 48: Token <SEMICOLON> Lexeme ; found
+Line No. 49: Token <CONST_FLOAT> Lexeme 3. found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 49: Token <ADDOP> Lexeme - found
+Line No. 49: Token <CONST_INT> Lexeme 14 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 49: Token <SEMICOLON> Lexeme ; found
+Line No. 50: Token <ID> Lexeme q found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 50: Token <ASSIGNOP> Lexeme = found
+Line No. 50: Token <CONST_FLOAT> Lexeme 12.E4 found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 50: Token <SEMICOLON> Lexeme ; found
+Line No. 51: Token <ID> Lexeme e found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 51: Token <ASSIGNOP> Lexeme = found
+Error at line 51: Too many decimal point 1.2.345
+Line No. 51: Token <SEMICOLON> Lexeme ; found
+Line No. 52: Token <ID> Lexeme f found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 52: Token <ASSIGNOP> Lexeme = found
+Error at line 52: Too many decimal point 1.2.3.4.
+Line No. 52: Token <SEMICOLON> Lexeme ; found
+Line No. 53: Token <ID> Lexeme n found
+Line No. 53: Token <ASSIGNOP> Lexeme = found
+Error at line 53: Too many decimal point 1.2.
+Line No. 53: Token <SEMICOLON> Lexeme ; found
+Line No. 54: Token <ID> Lexeme m found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 54: Token <ASSIGNOP> Lexeme = found
+Error at line 54: Too many decimal point .2.
+Line No. 54: Token <SEMICOLON> Lexeme ; found
+Line No. 55: Token <ID> Lexeme f found
+Line No. 55: Token <ASSIGNOP> Lexeme = found
+Error at line 55: Ill formed number 1E10.7
+Line No. 55: Token <SEMICOLON> Lexeme ; found
+Line No. 56: Token <ID> Lexeme g found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 56: Token <ASSIGNOP> Lexeme = found
+Error at line 56: Multi character constant error 'ab2cd'
+Line No. 56: Token <SEMICOLON> Lexeme ; found
+Line No. 57: Token <ID> Lexeme d found
+Line No. 57: Token <ASSIGNOP> Lexeme = found
+Error at line 57: Multi character constant error '\n\n'
+Line No. 57: Token <SEMICOLON> Lexeme ; found
+Line No. 58: Token <ID> Lexeme s found
+Line No. 58: Token <LTHIRD> Lexeme [ found
+Line No. 58: Token <RTHIRD> Lexeme ] found
+Line No. 58: Token <ASSIGNOP> Lexeme = found
+Error at line 58: Unterminated String "ab\"
+Line No. 58: Token <SEMICOLON> Lexeme ; found
+Line No. 59: Token <ID> Lexeme chae found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> <chae, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> 
+
+Line No. 59: Token <ID> Lexeme s found
+Line No. 59: Token <LTHIRD> Lexeme [ found
+Line No. 59: Token <RTHIRD> Lexeme ] found
+Line No. 59: Token <ASSIGNOP> Lexeme = found
+Error at line 59: Unterminated String "
+Line No. 60: Token <ID> Lexeme h found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> 
+2 --> <d, ID> <chae, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> <h, ID> 
+
+Line No. 60: Token <ASSIGNOP> Lexeme = found
+Error at line 60: Unterminated character 'a
+Line No. 60: Token <SEMICOLON> Lexeme ; found
+Line No. 61: Token <ID> Lexeme j found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> <j, ID> 
+2 --> <d, ID> <chae, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> <h, ID> 
+
+Line No. 61: Token <ASSIGNOP> Lexeme = found
+Error at line 61: Unterminated character '\'
+Line No. 61: Token <SEMICOLON> Lexeme ; found
+Line No. 62: Token <ID> Lexeme k found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> <j, ID> 
+2 --> <d, ID> <chae, ID> <k, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> <h, ID> 
+
+Line No. 62: Token <ASSIGNOP> Lexeme = found
+Error at line 62: Empty character constant error ''
+Line No. 62: Token <SEMICOLON> Lexeme ; found
+Line No. 63: Token <ID> Lexeme printf found
+Line No. 63: Token <LPAREN> Lexeme ( found
+Error at line 63: Unterminated String "ab\td
+Line No. 64: Token <ID> Lexeme printf found
+Line No. 64: Token <LPAREN> Lexeme ( found
+Error at line 64: Unterminated String "abc\
+def\
+ghi
+Line No. 67: Token <ID> Lexeme printf found
+Line No. 67: Token <LPAREN> Lexeme ( found
+Error at line 67: Unterminated String "unfinished\
+    string
+Line No. 69: Token <COMMENT> Lexeme /**abc
+def*/ found
+Line No. 71: Token <CONST_INT> Lexeme 0 found
+Line No. 71: Token <SEMICOLON> Lexeme ; found
+Line No. 72: Token <RCURL> Lexeme } found
+Line No. 73: Token <COMMENT> Lexeme //test comment found
+Line No. 74: Token <COMMENT> Lexeme //abc\
+def\
+ghi\
+ found
+
+0 --> <b, ID> <3.14159, CONST_FLOAT> <.314159, CONST_FLOAT> <1, CONST_INT> <i, ID> <ch, ID> <'a', CONST_CHAR> <12.E4, CONST_FLOAT> 
+1 --> <main, ID> <c, ID> <314159E10, CONST_FLOAT> <2, CONST_INT> <'1', CONST_CHAR> <new, ID> <q, ID> <j, ID> 
+2 --> <d, ID> <chae, ID> <k, ID> 
+3 --> <s, ID> <printf, ID> <am, ID> <14, CONST_INT> <e, ID> 
+4 --> <_, ID> <t, ID> <f, ID> <m, ID> 
+5 --> <12., CONST_FLOAT> <E10, ID> <n, ID> <g, ID> 
+6 --> <a, ID> <10, CONST_INT> <3.14156E-10, CONST_FLOAT> <7, CONST_INT> <0, CONST_INT> <'\t', CONST_CHAR> <v, ID> <3., CONST_FLOAT> <h, ID> 
+
+Total lines: 77
+Total errors: 19

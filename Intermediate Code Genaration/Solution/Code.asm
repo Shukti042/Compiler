@@ -1,0 +1,162 @@
+.MODEL SMALL
+.STACK 100H
+.DATA 
+RESULT DB ?,?,?,?,?,?,?,?,?
+FINAL DB ?,?,?,?,?,?,?,?,?
+f_return DW ?
+a2 DW ?
+b2 DW ?
+c2 DW ?
+t0 DW ?
+t1 DW ?
+t2 DW ?
+t3 DW ?
+g_return DW ?
+a4 DW ?
+b4 DW ?
+main_return DW ?
+x5 DW ?
+y5 DW ?
+t4 DW ?
+DISPLAY PROC
+	PUSH AX
+	PUSH BX
+	PUSH CX
+	PUSH DX
+	MOV BX,AX
+	CMP AX,0
+	JGE POS
+	MOV AH,2
+	MOV DL,45
+	INT 21H
+	MOV AX,BX 
+	NEG AX
+	POS:
+	MOV SI,0
+	WHILE_LOOP:
+	MOV DX,0
+	MOV BX,10
+	DIV BX
+	ADD DX,'0'
+	MOV RESULT+SI,DL
+ 	ADD SI,1
+ 	CMP AX,0
+	JNZ WHILE_LOOP
+	END_LOOP:
+	MOV RESULT+SI,'$'
+	MOV FINAL+SI,'$'
+	MOV CX,SI
+	MOV DI,SI
+	SUB DI,1
+	MOV SI,0
+	REVERSE:
+	MOV BL,RESULT+DI
+	MOV FINAL+SI,BL
+	SUB DI,1
+	ADD SI,1
+	LOOP REVERSE
+	MOV AH,9
+	LEA DX,FINAL
+	INT 21H
+	MOV AH,2
+	MOV DL,0DH
+	INT 21H
+	MOV DL,0AH
+	INT 21H
+	POP DX
+	POP CX
+	POP BX
+	POP AX
+	ret
+DISPLAY ENDP
+f PROC
+	PUSH AX
+	PUSH BX 
+	PUSH CX 
+	PUSH DX
+	MOV AX,a2
+	CALL DISPLAY
+	MOV AX,a2
+	CMP AX,1
+	JE L0
+	MOV t0,0
+	JMP L1
+L0:
+	MOV t0,1
+L1:
+	MOV AX,t0
+	CMP AX,0
+	JE L2
+	MOV AX,1
+	MOV f_return,AX
+	JMP Return_f
+L2:
+	MOV AX,a2
+	SUB AX,1
+	MOV t1,AX
+	PUSH a2
+	PUSH b2
+	PUSH c2
+	PUSH t0
+	PUSH t1
+	MOV AX,t1
+	MOV a2,AX
+	MOV AX,1
+	MOV b2,AX
+	MOV AX,2
+	MOV c2,AX
+	CALL f
+	MOV AX,f_return
+	MOV t2,AX
+	POP t1
+	POP t0
+	POP c2
+	POP b2
+	POP a2
+	MOV AX,a2
+	MOV BX,t2
+	MUL BX
+	MOV t3,AX
+	MOV f_return,AX
+	JMP Return_f
+Return_f:
+	POP DX
+	POP CX
+	POP BX
+	POP AX
+	ret
+f ENDP
+g PROC
+	PUSH AX
+	PUSH BX 
+	PUSH CX 
+	PUSH DX
+Return_g:
+	POP DX
+	POP CX
+	POP BX
+	POP AX
+	ret
+g ENDP
+main PROC
+	MOV AX,@DATA
+	MOV DS,AX 
+	MOV AX,6
+	MOV y5,AX
+	MOV a2,AX
+	MOV AX,2
+	MOV b2,AX
+	MOV AX,3
+	MOV c2,AX
+	CALL f
+	MOV AX,f_return
+	MOV t4,AX
+	MOV x5,AX
+	CALL DISPLAY
+	MOV AX,0
+	MOV main_return,AX
+	JMP Return_main
+Return_main:
+	MOV AH,4CH
+	INT 21H
+END MAIN
