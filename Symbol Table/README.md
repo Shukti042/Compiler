@@ -1,3 +1,3 @@
-# 4-bit ALU Simulation
+# Symbol Table
 
-Full description about the tasks are in [Problem Description](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/ALU_Simulation.pdf) and the solutions are in [Solution](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/Solution/Final-Circuit.circ). Details report on the tasks is in [Report](https://github.com/Shukti042/Computer-Architecture/blob/master/ALU/Solution/Report.docx). 
+Full description about the tasks are in [Problem Description](https://github.com/Shukti042/Compiler/blob/master/Symbol%20Table/Assignment_Symbol_Table.pdf) and the solutions are in [Solution](https://github.com/Shukti042/Compiler/blob/master/Symbol%20Table/Symbol_Table.cpp).
